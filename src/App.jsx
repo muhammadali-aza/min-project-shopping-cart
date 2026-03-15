@@ -18,6 +18,17 @@ export default function App() {
         />
         <Routes>
           <Route
+            path="/"
+            element={
+              <Home
+                setcartCounter={setcartCounter}
+                cartCounter={cartCounter}
+                search={search}
+                setcartItems={setcartItems}
+              />
+            }
+          />
+          <Route
             path="/home"
             element={
               <Home
@@ -28,7 +39,17 @@ export default function App() {
               />
             }
           />
-          <Route path="/cart" element={<Cart cartItems={cartItems} setcartItems={setcartItems} cartCounter={cartCounter} setcartCounter={setcartCounter}/>} />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cartItems={cartItems}
+                setcartItems={setcartItems}
+                cartCounter={cartCounter}
+                setcartCounter={setcartCounter}
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
     </>
