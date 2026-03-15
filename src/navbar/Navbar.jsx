@@ -50,6 +50,7 @@ export default function Navbar({ cartCounter, setsearch, search }) {
               p-2 
               focus:border-amber-500 
               outline-none
+              text-white
             "
           />
         </div>
