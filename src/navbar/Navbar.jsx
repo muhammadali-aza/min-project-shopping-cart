@@ -24,7 +24,7 @@ export default function Navbar({ cartCounter, setsearch, search }) {
 
         {/* Logo */}
         <div className="flex justify-center sm:justify-start">
-          <Link to="/home">
+          <Link to="/">
             <img
               src="https://i.pinimg.com/736x/a1/ed/36/a1ed365fbe02a15c911a617ef523e8ef.jpg"
               alt="Company Logo"
@@ -65,7 +65,7 @@ export default function Navbar({ cartCounter, setsearch, search }) {
         ">
 
           <Link
-            to="/home"
+            to="/"
             className="
               text-[16px] 
               sm:text-[17px] 
